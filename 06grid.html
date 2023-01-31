@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section
+        {
+            height: 700px;
+            background-color: darkgoldenrod;
+            display: grid;
+            row-gap: 8px;
+            column-gap: 8px;
+            /* grid-template-rows: 150px 150px 150px;
+            grid-template-columns: 150px 150px 150px; */
+            grid-template-rows: 100px 1fr 100px;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3,1fr); */
+        }
+        #item1{
+            text-align: center;
+            font-size: 50px;
+            color: aliceblue;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            /* grid-row-start: 1;
+            grid-row-end: 3; */
+
+        }
+        #item2{
+            text-align: center;
+            font-size: 50px;
+            color: aliceblue;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .box{
+            /* width: 150px; */
+            /* height: 150px; */
+            background-color: cornflowerblue;
+            /* margin: 8px; */
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <div class="box" id="item1"> header</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box" id="item2">footer</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </section>
+    
+</body>
+</html>
